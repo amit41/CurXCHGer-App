@@ -7,12 +7,104 @@
     tools:context="de.kumal.curxchger.MainActivity">
 
     <TextView
+        android:id="@+id/tvConvertingCurLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/convertingCurFrom"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvConvertingCurName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/convertingCurName"
+        app:layout_constraintStart_toEndOf="@+id/tvConvertingCurLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivConvertingCurCountryFlag"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/convertingCurCountry_flag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConvertingCurLabel"
+        app:srcCompat="@drawable/us" />
+
+    <EditText
+        android:id="@+id/edTxtConvertingCurValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/ivConvertingCurCountryFlag"
+        app:layout_constraintStart_toEndOf="@+id/ivConvertingCurCountryFlag"
+        app:layout_constraintTop_toTopOf="@+id/ivConvertingCurCountryFlag" />
+
+    <ImageView
+        android:id="@+id/ivConvertedCurCountryFlag"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/convertedCurCountry_flag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConvertedCurLabel"
+        app:srcCompat="@drawable/de" />
+
+    <TextView
+        android:id="@+id/tvConvertedCurLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/convertedCur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivConvertingCurCountryFlag" />
+
+    <TextView
+        android:id="@+id/tvConvertedCurValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/convertedCurName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvConvertedCurLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvConvertedCurLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvConvertedCurLabel" />
+
+    <Button
+        android:id="@+id/btnExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/exchange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivConvertedCurCountryFlag" />
+
+    <EditText
+        android:id="@+id/edTxtConvertedCurValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ivConvertedCurCountryFlag"
+        app:layout_constraintStart_toEndOf="@+id/ivConvertedCurCountryFlag"
+        app:layout_constraintTop_toTopOf="@+id/ivConvertedCurCountryFlag" />
 </android.support.constraint.ConstraintLayout>

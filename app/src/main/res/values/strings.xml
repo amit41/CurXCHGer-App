@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CurXCHGer</string>
+    <string name="convertingCurFrom">From: </string>
+    <string name="convertingCurName">US Dollar</string>
+    <string name="convertingCurCountry_flag">US Flag</string>
+    <string name="convertedCurCountry_flag">DE Flag</string>
+    <string name="convertedCur">To:</string>
+    <string name="convertedCurName">Euro</string>
+    <string name="convertedCurValue">00</string>
+    <string name="exchange">Exchange</string>
 </resources>
