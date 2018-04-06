@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:labelFor="@+id/edTxtConvertingCurValue"
         android:text="@string/convertingCurFrom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,9 +21,11 @@
         android:id="@+id/tvConvertingCurName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/convertingCurName"
+        app:layout_constraintBottom_toTopOf="@+id/ivConvertingCurCountryFlag"
         app:layout_constraintStart_toEndOf="@+id/tvConvertingCurLabel"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,10 +44,13 @@
         android:id="@+id/edTxtConvertingCurValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/ivConvertingCurCountryFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivConvertingCurCountryFlag"
         app:layout_constraintTop_toTopOf="@+id/ivConvertingCurCountryFlag" />
 
@@ -52,11 +58,9 @@
         android:id="@+id/ivConvertedCurCountryFlag"
         android:layout_width="100dp"
         android:layout_height="70dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/convertedCurCountry_flag"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvConvertedCurLabel"
         app:srcCompat="@drawable/de" />
@@ -72,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivConvertingCurCountryFlag" />
 
     <TextView
-        android:id="@+id/tvConvertedCurValue"
+        android:id="@+id/tvConvertedCurName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -87,24 +91,27 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/exchange"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivConvertedCurCountryFlag" />
 
-    <EditText
-        android:id="@+id/edTxtConvertedCurValue"
+    <TextView
+        android:id="@+id/tvConvertedCurValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:clickable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="textPersonName"
+        android:text="@string/changed_currency"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/ivConvertedCurCountryFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivConvertedCurCountryFlag"
         app:layout_constraintTop_toTopOf="@+id/ivConvertedCurCountryFlag" />
+
 </android.support.constraint.ConstraintLayout>

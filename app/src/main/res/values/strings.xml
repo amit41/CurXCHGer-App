@@ -1,11 +1,36 @@
 <resources>
     <string name="app_name">CurXCHGer</string>
     <string name="convertingCurFrom">From: </string>
-    <string name="convertingCurName">US Dollar</string>
+    <string name="convertingCurName">USD</string>
     <string name="convertingCurCountry_flag">US Flag</string>
     <string name="convertedCurCountry_flag">DE Flag</string>
     <string name="convertedCur">To:</string>
-    <string name="convertedCurName">Euro</string>
+    <string name="convertedCurName">EUR</string>
     <string name="convertedCurValue">00</string>
     <string name="exchange">Exchange</string>
+    <string name="changed_currency">Changed Currency</string>
+    <string name="country_name">Country Name</string>
+    <string name="currency_code">Currency Code</string>
+    <string name="country_flag">Country Flag</string>
+
+    <string-array name="country_alpha2codes">
+        <item>us</item>
+        <item>de</item>
+        <item>gb</item>
+        <item>np</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>United States</item>
+        <item>Germany</item>
+        <item>United Kingdom</item>
+        <item>Nepal</item>
+    </string-array>
+
+    <string-array name="currency_codes">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>NPR</item>
+    </string-array>
 </resources>
